@@ -1,0 +1,92 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #222222;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+ol {
+    list-style: decimal inside;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 18px 0;
+    font-size: 22px;
+    color: #444444;
+    word-wrap: break-word;
+}
+
+.phone {
+    color: #1e88e5;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.phone:hover {
+    color: #1565c0;
+}
+
+/* Center Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 1000;
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+    li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .phone {
+        font-size: 20px;
+    }
+}
