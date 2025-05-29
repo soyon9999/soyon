@@ -1,1 +1,1 @@
-[ soyon_mlwbd](https://soyon9999.github.io/soyon/)
+[soyon](https://soyon9999.github.io/soyon/)
